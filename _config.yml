@@ -103,7 +103,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  Consider this my formal invitation to contact me or follow me on the platform of your choice!
+  Consider this my formal invitation to contact or follow me on the platform(s) of your choice!
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -154,8 +154,6 @@ giscus:
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
