@@ -1,7 +1,7 @@
 ---
 layout: post
 title: hello world
-date: 2023-12-05 22:30:00-0400
+date: 2023-12-05 18:30:00-0400
 description: Initial post
 tags: 
 categories: 
