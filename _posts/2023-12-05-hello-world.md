@@ -9,8 +9,8 @@ featured: true
 giscus_comments: true
 related_posts: false
 ---
-Hello World.
+Hello world.
 
 First blog post. That's it. Yay!
 
-Til next time.
+'Til next time.
