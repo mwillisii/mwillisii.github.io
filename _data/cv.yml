@@ -21,12 +21,12 @@
   type: time_table
   contents:
     - title: Cloud Engineer
-      institution: Best Friends Animal Society
-      year: Apr 2022 - Present
+      institution: Best Friends Animal Society, Kanab, UT (Remote)
+      year: 2022 - Present
 
     - title: Network Engineer
-      institution: BWX Technologies, Inc.
-      year: Sep 2016 - Apr 2022
+      institution: BWX Technologies, Inc, Lynchburg, VA
+      year: 2016 - 2022
       description:
         - Configure and maintain network infrastructure which includes three data centers consisting of Cisco Nexus 9K's, 7K's, 5K's and 3K fabric extenders, ISR 4300 series routers, wireless LAN controllers and Cisco ASA firewalls.
         - Configure and maintain dozens of remote branch sites which include multiple MPLS and DMVPN connections and hundreds of Cisco routers and switches.
@@ -36,37 +36,48 @@
         - Implemented and maintain ForeScout Network Access Control, including 802.1x company-wide.
         - Ensure all Cisco IOS and NX-OS devices are compliant and schedule after-hours downtime to upgrade when new security vulnerabilities are released.
 
-    - title: Marine
-      institution: U.S. Marine Corps
-      year: Aug 2010 - July 2015
+- title: Network Engineer
+      institution: Lynchburg City Schools, Lynchburg, VA
+      year: 2015 - 2016
+      description:
+        - Lynchburg City Schools has two high schools, three middle schools, eleven elementary schools as well as five alternative schools and sites which serve more than 8,000 students. Our goal is to provide a stable network and IT infrastructure in order to assist the classroom teacher provide the best instruction for his/her students.
+        - Network engineering and administration - manage and maintain a network infrastructure that includes over 300 Cisco switches.
+        - Upgraded and improved the network from a completely flat layer 2 domain to segregated layer 3 sites utilizing EIGRP.
+        - Network security - manage and Cisco 5585 ASA firewall and a Lightspeed Rocket web filter in order to protect the students and provide a distraction-free classroom environment.
+
+    - title: Sr Network Engineer / Sr Network Administrator (Sergeant)
+      institution: U.S. Marine Corps, Combat Logistics Regiment 15, Camp Pendleton, CA
+      year: 2014 - 2015
       description: 
-        - title: Sr Network Engineer / Sr Network Administrator (Sergeant)
-          contents:
-            - Was in charge of establishing and maintaining Combat Logistic Regiment 15's LAN, Domain Controllers, and Exchange Servers on both unclassified and classified systems.
-            - Established IPsec tunnels, GRE tunnels, and DMVPN tunnels to other adjacent units in order to provide reliable, secure services to hundreds of end users.
-            - Implemented a dual routing protocol environment utilizing EIGRP, RIP, and redistributing to provide an efficient, stable backbone network.
-            - Configured multiple VLANs in order to separate voice, data, and server traffic.
-            - Drafted and implemented a baseline LAN topology that enabled Combat Logistic Regiment 15 to vastly improve their network's reliability and allow newcomers to easily be able to pick up where his/her predecessor left off.
-            - Designed network IP schemes and diagrams.
-            - Utilized downtime to give classes to Marines, helping them become better network engineers and administrators and ultimately improving mission accomplishment.
-            - Managed a team of over 10 Marines, assigning different job roles and ensuring the mission was always able to be accomplished.
+        - Was in charge of establishing and maintaining Combat Logistic Regiment 15's LAN, Domain Controllers, and Exchange Servers on both unclassified and classified systems.
+        - Established IPsec tunnels, GRE tunnels, and DMVPN tunnels to other adjacent units in order to provide reliable, secure services to hundreds of end users.
+        - Implemented a dual routing protocol environment utilizing EIGRP, RIP, and redistributing to provide an efficient, stable backbone network.
+        - Configured multiple VLANs in order to separate voice, data, and server traffic.
+        - Drafted and implemented a baseline LAN topology that enabled Combat Logistic Regiment 15 to vastly improve their network's reliability and allow newcomers to easily be able to pick up where his/her predecessor left off.
+        - Designed network IP schemes and diagrams.
+        - Utilized downtime to give classes to Marines, helping them become better network engineers and administrators and ultimately improving mission accomplishment.
+        - Managed a team of over 10 Marines, assigning different job roles and ensuring the mission was always able to be accomplished.
 
-        - title: Sr. Network Engineer (Sergeant)
-          contents:
-            - Worked and troubleshot with 6 WAN sites in order to provide WAN services to our multiple Enterprise-level networks.
-            - Implemented, maintained, and troubleshot eBGP, iBGP, EIGRP, OSPF, and route redistribution on Cisco routers.
-            - Tweaked BGP in order to adapt to the mission’s dynamic redundancy and scalability requirements by utilizing IP prefix lists, route maps, route reflectors, and AS-path prepending.- Configured layer 2 switch stacks (VLANs, trunking, inter-VLAN routing, VTP domains, STP, port security, and BPDU guard).
-            - Configured and monitored the Fortinet firewall and McAfee IDS in order to secure the network from all external threats on both Unclassified and Classified systems.
-            - Utilized Access Control Lists on Cisco routers in order to add an additional layer of security.
-            - Configured IPsec VPN tunnels utilized for secure communication between multiple sites.
-            - Implemented a baseline security policy for the unit's dynamic requirements utilizing policy-based packet filtering, virus and email/spam content filtering, NAT/PAT, DMZ, and DNS black hole.
-            - Performed packet captures in order to troubleshoot, identify potential issues or threats, and utilize risk management techniques.
-            - Designed and improved network infrastructure and IP schemes.
-            - Instructed Marines under my charge, giving over 100 hours of classes to ensure that the mission was always accomplished without error.
-            - Consulted with Cisco representatives in order to receive training that was readily available to military personnel.
+    - title: Sr. Network Engineer (Sergeant)
+      institution: U.S. Marine Corps, 9th Communication Battalion, I Marine Expeditionary Force, Camp Pendleton, CA
+      year: 2010 - 2014
+      description:
+        - Worked and troubleshot with 6 WAN sites in order to provide WAN services to our multiple Enterprise-level networks.
+        - Implemented, maintained, and troubleshot eBGP, iBGP, EIGRP, OSPF, and route redistribution on Cisco routers.
+        - Tweaked BGP in order to adapt to the mission's dynamic redundancy and scalability requirements by utilizing IP prefix lists, route maps, route reflectors, and AS-path prepending.- Configured layer 2 switch stacks (VLANs, trunking, inter-VLAN routing, VTP domains, STP, port security, and BPDU guard).
+        - Configured and monitored the Fortinet firewall and McAfee IDS in order to secure the network from all external threats on both Unclassified and Classified systems.
+        - Utilized Access Control Lists on Cisco routers in order to add an additional layer of security.
+        - Configured IPsec VPN tunnels utilized for secure communication between multiple sites.
+        - Implemented a baseline security policy for the unit's dynamic requirements utilizing policy-based packet filtering, virus and email/spam content filtering, NAT/PAT, DMZ, and DNS black hole.
+        - Performed packet captures in order to troubleshoot, identify potential issues or threats, and utilize risk management techniques.
+        - Designed and improved network infrastructure and IP schemes.
+        - Instructed Marines under my charge, giving over 100 hours of classes to ensure that the mission was always accomplished without error.
+        - Consulted with Cisco representatives in order to receive training that was readily available to military personnel.
 
-        - title: Network Administrator / Helpdesk Technician (Lance Corporal)
-          contents:
+    - title: Network Administrator / Helpdesk Technician (Lance Corporal)
+      institution: U.S. Marine Corps, 9th Communication Battalion Forward, Lashkar Gah, Helmand Province, Afghanistan
+      year: 2012 - 2012
+      description:
             - Was in charge of administering and maintaining 3 network infrastructures, each providing a different level of classification and supporting over 5,000 end users. To do this, it was necessary to take on multiple different roles, including providing 24/7 helpdesk services to all NATO forces and U.S. government personnel located in Lashkar Gah, troubleshooting network outages, and ensuring 99.99% up-time in a combat zone environment.
             - Successfully opened and closed 1,000+ trouble tickets, including Active Directory account lockouts, port security lockouts, software and hardware issues, cabling issues, DHCP problems, DNS issues, IP telephony related issues, etc. 
             - Maintained, monitored, and troubleshot (when necessary) EIGRP, OSPF, and multiple GRE tunnels.
