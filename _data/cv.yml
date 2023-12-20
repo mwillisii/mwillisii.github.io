@@ -8,15 +8,6 @@
     - name: Location
       value: Wirtz, VA
 
-- title: Education
-  type: time_table
-  contents:
-    - title: Bachelor of Science (BS)
-      institution: Western Governors University, Salt Lake City, Utah
-      year: 2018
-      description:
-        - Information Technology - Security
-
 - title: Experience
   type: time_table
   contents:
@@ -86,12 +77,14 @@
             - Assisted with a project in which we rewired the entire network infrastructure at Lashkar Gah, replacing the entire backbone with multi-mode fiber-optic cable and installed over 20 Cisco routers and switches into new rack cabinets.
             - Logged all trouble tickets and network outages in order to recognize trends and make improvements to the network infrastructure.
 
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title:
-      year:
+    - title: Bachelor of Science (BS)
+      institution: Western Governors University, Salt Lake City, Utah
+      year: 2018
       description:
+        - Information Technology - Security
 
 - title: Honors and Awards
   type: time_table
