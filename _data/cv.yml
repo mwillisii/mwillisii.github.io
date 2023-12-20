@@ -76,7 +76,7 @@
 
     - title: Network Administrator / Helpdesk Technician (E-3)
       institution: U.S. Marine Corps, 9th Communication Battalion Forward, Lashkar Gah, Helmand, Afghanistan
-      year: 2012 - 2012
+      year: 2012
       description:
             - Was in charge of administering and maintaining 3 network infrastructures, each providing a different level of classification and supporting over 5,000 end users. To do this, it was necessary to take on multiple different roles, including providing 24/7 helpdesk services to all NATO forces and U.S. government personnel located in Lashkar Gah, troubleshooting network outages, and ensuring 99.99% up-time in a combat zone environment.
             - Successfully opened and closed 1,000+ trouble tickets, including Active Directory account lockouts, port security lockouts, software and hardware issues, cabling issues, DHCP problems, DNS issues, IP telephony related issues, etc. 
@@ -105,20 +105,3 @@
       items: 
         - 1. In recognition of your outstanding contribution and performance while serving as Deployed Security Interdiction Device (DSID) Operator, Alpha Company Forward, 9th Communication Battalion, I Marine Expeditionary Force, in support of 9th Communication Battalion Communication Exercise 3-13 from 8 September to 19 September 2013. Your dedication to duty and superior technical expertise were crucial in the detachment's ability to establish all communication services within 48 hours. Your hard work enabled the successful validation of Alpha Company Forward's ability to provide expeditious command, control, communication, and computer (C4) services in order to extend warfighting capabilities to the I Marine Expeditionary Brigade Command Element (CE).
         - 2. For your dedication to the detachment's mission and the skillful execution of your duties, I sincerely thank you. You truly set an outstanding example as a young NCO of Marines. Semper Fidelis!
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
