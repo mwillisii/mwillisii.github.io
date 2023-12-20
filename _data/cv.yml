@@ -5,8 +5,8 @@
       value: Mark Willis
     - name: Date of Birth
       value: 2 November
-    - name: Languages
-      value: English
+    - name: Location
+      value: Wirtz, VA
 
 - title: Education
   type: time_table
@@ -45,7 +45,7 @@
         - Upgraded and improved the network from a completely flat layer 2 domain to segregated layer 3 sites utilizing EIGRP.
         - Network security - manage and Cisco 5585 ASA firewall and a Lightspeed Rocket web filter in order to protect the students and provide a distraction-free classroom environment.
 
-    - title: Sr Network Engineer / Sr Network Administrator (Sergeant)
+    - title: Sr Network Engineer / Sr Network Administrator (E-5)
       institution: U.S. Marine Corps, Combat Logistics Regiment 15, Camp Pendleton, CA
       year: 2014 - 2015
       description: 
@@ -58,7 +58,7 @@
         - Utilized downtime to give classes to Marines, helping them become better network engineers and administrators and ultimately improving mission accomplishment.
         - Managed a team of over 10 Marines, assigning different job roles and ensuring the mission was always able to be accomplished.
 
-    - title: Sr. Network Engineer (Sergeant)
+    - title: Sr. Network Engineer (E-5)
       institution: U.S. Marine Corps, 9th Communication Battalion, I Marine Expeditionary Force, Camp Pendleton, CA
       year: 2010 - 2014
       description:
@@ -74,8 +74,8 @@
         - Instructed Marines under my charge, giving over 100 hours of classes to ensure that the mission was always accomplished without error.
         - Consulted with Cisco representatives in order to receive training that was readily available to military personnel.
 
-    - title: Network Administrator / Helpdesk Technician (Lance Corporal)
-      institution: U.S. Marine Corps, 9th Communication Battalion Forward, Lashkar Gah, Helmand Province, Afghanistan
+    - title: Network Administrator / Helpdesk Technician (E-3)
+      institution: U.S. Marine Corps, 9th Communication Battalion Forward, Lashkar Gah, Helmand, Afghanistan
       year: 2012 - 2012
       description:
             - Was in charge of administering and maintaining 3 network infrastructures, each providing a different level of classification and supporting over 5,000 end users. To do this, it was necessary to take on multiple different roles, including providing 24/7 helpdesk services to all NATO forces and U.S. government personnel located in Lashkar Gah, troubleshooting network outages, and ensuring 99.99% up-time in a combat zone environment.
