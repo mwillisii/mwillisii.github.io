@@ -89,20 +89,22 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title:
+      year:
+      description:
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - title: Certificate of Commendation, Issued by Lieutenant Colonel Mark T. Donar
+      year: 2014
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - Commanding Officer, 1st Maintenance Battalion takes pleasure in commending Sergeant Mark S. Willis, United States Marine Corps, for outstanding achievement in the performance of his duties while serving as Data Chief for Headquarters and Service Company, 1st Maintenance Battalion, Combat Logistics Regiment 15, 1st Marine Logistics Group, from 28 July 2014 to 15 August 2014. Throughout this period, Sergeant Willis performed his duties in an exemplary and highly professional manner. During the conduct of 1st Marine Expeditionary Brigade's Large Scale Exercise, Sergeant Willis used his expertise and technical knowledge to troubleshoot with the higher communication element to plan, design, and establish the tactical data communication network, allowing the battalion to begin training on their arrival to the field. Sergeant Willis ensured there was a 99 percent up-time of eight servers for Internet and email access, giving the users efficient and uninterrupted services. With his guidance, his team diligently maintained 24 hours vigilance of the network ensuring the battalion's ability to communicate with higher and adjacent units without service interruptions during the course of the exercise. Sergeant Willis' professionalism, initiative, and loyal dedication to duty reflected credit upon him and were in keeping with the highest traditions of the Marine Corps and the United States Naval Service.
+    - title: Letter of Appreciation, Issued by 2nd Lieutenant Yinan Yang
+      year: 2013
       items: 
-        - Max Planck Medal
+        - 1. In recognition of your outstanding contribution and performance while serving as Deployed Security Interdiction Device (DSID) Operator, Alpha Company Forward, 9th Communication Battalion, I Marine Expeditionary Force, in support of 9th Communication Battalion Communication Exercise 3-13 from 8 September to 19 September 2013. Your dedication to duty and superior technical expertise were crucial in the detachment's ability to establish all communication services within 48 hours. Your hard work enabled the successful validation of Alpha Company Forward's ability to provide expeditious command, control, communication, and computer (C4) services in order to extend warfighting capabilities to the I Marine Expeditionary Brigade Command Element (CE).
+        - 2. For your dedication to the detachment's mission and the skillful execution of your duties, I sincerely thank you. You truly set an outstanding example as a young NCO of Marines. Semper Fidelis!
 
 - title: Academic Interests
   type: nested_list
