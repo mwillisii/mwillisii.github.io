@@ -203,6 +203,7 @@ exclude:
   - _includes/repository/
   - _pages/blog.md
   - _pages/projects.md
+  - _pages/cv.md
 keep_files:
   - CNAME
   - .nojekyll
