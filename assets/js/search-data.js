@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{
+        },{id: "post-setting-up-nextcloud-aio-with-nginx-proxy-manager-and-portainer",
+        
+          title: "setting up nextcloud aio with nginx proxy manager and portainer",
+        
+        description: "a guide for configuring nextcloud aio to function behind nginx proxy manager, including a docker compose file for setting up nextcloud, npm, and portainer",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/nextcloud-npm/";
+          
+        },
+      },{
         id: 'social-bluesky',
         title: 'Bluesky',
         section: 'Socials',
