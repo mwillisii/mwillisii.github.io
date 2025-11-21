@@ -189,8 +189,23 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _news/
+  - _includes/news.liquid
   - _projects/
   - _pages/projects.md
+  - _includes/projects_horizontal.liquid
+  - _includes/projects.liquid
+  - _bibliography/
+  - _pages/publications.md
+  - _layouts/bib.liquid
+  - _includes/bib_search.liquid
+  - _includes/citation.liquid
+  - _includes/selected_papers.liquid
+  - _plugins/google-scholar-citations.rb
+  - _plugins/hide-custom-bibtex.rb
+  - _plugins/inspirehep-citations.rb
+  - _pages/repositories.md
+  - _includes/repository/
 keep_files:
   - CNAME
   - .nojekyll
