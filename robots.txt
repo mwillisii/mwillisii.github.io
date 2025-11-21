@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mwillisii.github.io/sitemap.xml
