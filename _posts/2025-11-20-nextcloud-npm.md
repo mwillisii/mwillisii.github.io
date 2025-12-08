@@ -36,4 +36,12 @@ This is where a reverse proxy comes in. Essentially, it takes traffic coming int
     My Nginx Proxy Manager instance
 </div>
 
-There may be better options here, but I'm a sucker for ease-of-use, and NPM fits the bill. So off I go searching for guides on installing Nextcloud behind NPM, and I came across [this amazing guide from the Nextcloud AIO GitHub wiki](https://github.com/nextcloud/all-in-one/discussions/4240) (thanks [4lexRed](https://github.com/4lexRed)!) In this post, 4lexRed includes a Docker compose file, which is used by Docker to provision both Nextcloud and NPM, as well as Portainer (a web-hosted GUI to manage Docker containers, because I loathe managing Docker from the CLI), all from one Docker command. There are a few changes that need to be made to the compose file for my environment, all of which were mentioned in their instructions. [Here's my compose file](https://markw.wtf/assets/misc/2025-11-20-nextcloud-npm(docker-compose).yml) I ended up with after modifying it to suit my environment.
+There may be better options here, but I'm a sucker for ease-of-use, and NPM fits the bill. So off I go searching for guides on installing Nextcloud behind NPM, and I came across [this amazing guide from the Nextcloud AIO GitHub wiki](https://github.com/nextcloud/all-in-one/discussions/4240) (thanks [4lexRed](https://github.com/4lexRed)!). In this post, 4lexRed includes a Docker compose file, which is used by Docker to provision both Nextcloud and NPM, as well as Portainer (a web-hosted GUI to manage Docker containers, because I loathe managing Docker from the CLI), all from one Docker command. There are a few changes that need to be made to the compose file for my environment, all of which were mentioned in their instructions. [Here's my compose file](https://markw.wtf/assets/misc/2025-11-20-nextcloud-npm(docker-compose).yml) I ended up with after modifying it to suit my environment. Some of the changes were needed because of recent Nextcloud and/or Docker updates.
+
+Now, to create the Docker containers via the Docker compose file. As previously mentioned, I'm running Debian on my home server. I'm the only one in there managing it, so I like to use my home folder for just about everything because I'm lazy. I ran into some issues installing Docker via aptitude, so I suggest following their official documentation depending on your distro: [Docker install — supported platforms](https://docs.docker.com/engine/install/#supported-platforms)
+
+Next we want to make sure our system is sync'd and up-to-date:
+
+````markdown
+sudo apt update && sudo apt upgrade -y
+````
