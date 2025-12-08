@@ -57,3 +57,32 @@ Press ctrl+x, then press "Y" to save the file. Then, we run Docker compose from 
 ````markdown
 docker compose up -d
 ````
+
+Docker handles all the provisioning of the containers from there! Now we can navigate to our Nextcloud instance: https://your.host.ip.address:8080 (replace the IP with your host's IP, of course)
+
+Make sure to save your AIO interface password, as this is the only time you can save it! After saving the password and logging in, you'll be prompted to enter the domain name of your Nextcloud instance. Enter your domain and click submit; the domain check will fail, and this is normal. The reason for this is two-fold: our reverse proxy (Nginx Proxy Manager in this case) is not yet configured, and we are not using host networking in Docker, as is detailed in the docker-compose file. This means our Docker containers do not have access to the host's network stack, which I like to configure this way for security reasons. We want our reverse proxy handling all of that anyway!
+
+So, let's jump into NPM and get that configured. We will also utilize Portainer, which was another container created via the docker-compose file, to get the IP of the new container spun up by Nextcloud for the domain check process. We are going to forward traffic to our Nextcloud domain to the domaincheck container, which will make our Nextcloud instance happy!
+
+First, we'll need Docker's IP for the nextcloud-aio-domaincheck container to give to NPM. Open Portainer at https://your.host.ip.address:9443. Set your password and then navigate to the "local" environment, then navigate to Containers - you will see a list of all containers currently running in Docker. Find the container called "nextcloud-aio-domaincheck" and make note of its IP, which should start with 172.18.0.x (I'm going to use 172.18.0.5 for this example). If you don't see this container, then run the domain check from your Nextcloud instance, which will fail again.
+
+Open NPM at http://your.host.ip.address:81 and set your admin credentials. From the dashboard, go to Proxy Hosts, then click "Add Proxy Host." Enter your Nextcloud domain name, select http for the Scheme, use the IP you noted from the nextcloud-aio-domaincheck container, and Forward Port 11000. Also ensure to enable the "Block Common Exploits" and "Websockets Support" options.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(03).png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Now, go back to your Nextcloud instance and run the same domain check again. Success! Go ahead and finish setting up your Nextcloud instance at this point with your preferred settings. Once setup, there will be a new container called "nextcloud-aio-apache." Open Portainer again and you can see all the containers created by Nextcloud, or use the command "docker ps" to see them in the console.
+
+In NPM, we need to edit the previous Proxy Host created for the domaincheck container. 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(04).png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Edit the previous entry created for nextcloud-aio-domaincheck. You can use either the IP or the hostname for the container, although it's suggested to use the hostname, as the IP can change anytime the containers are rebuilt, which occurs during Nextcloud updates.
+</div>
