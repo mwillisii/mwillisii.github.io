@@ -20,7 +20,7 @@ First things first, I needed hardware. I used to run a Raspberry Pi for Pi Hole 
     </div>
 </div>
 <div class="caption">
-    My "home lab," complete with dog hair and a rat nest of cables! I really should tidy this up...
+    My "home lab," complete with dog hair and a rat's nest of cables! I really should tidy this up...
 </div>
 
 This mini PC came with Windows, but I'm not a Microsoft fan, so I wiped it and installed Debian. Now that I've got all that out of the way, it's time to install Nextcloud. I'm not reinventing the wheel here - there are lots of guides out there on how to install Nextcloud. The official method from Nextcloud themselves is to [install Nextcloud AIO via Docker](https://github.com/nextcloud/all-in-one). This is all well and good, and I even utilized this method for a few months while I got my feet wet. However, the problem I ran into is in regards to the rest of my hosted services on the same server: any service that uses the same port as Nextcloud is black-holed, since Nextcloud "hijacks" the port on the host to redirect it to the Docker container. And since Nextcloud uses both port 80 (http) and 443 (https), this essentially broke any other service using those ports. Considering over the past few months I've setup several self-hosted services on this box (Pi Hole, Plex, Sonarr, Radarr, Miniflux, etc.), this was problematic.
@@ -38,10 +38,22 @@ This is where a reverse proxy comes in. Essentially, it takes traffic coming int
 
 There may be better options here, but I'm a sucker for ease-of-use, and NPM fits the bill. So off I go searching for guides on installing Nextcloud behind NPM, and I came across [this amazing guide from the Nextcloud AIO GitHub wiki](https://github.com/nextcloud/all-in-one/discussions/4240) (thanks [4lexRed](https://github.com/4lexRed)!). In this post, 4lexRed includes a Docker compose file, which is used by Docker to provision both Nextcloud and NPM, as well as Portainer (a web-hosted GUI to manage Docker containers, because I loathe managing Docker from the CLI), all from one Docker command. There are a few changes that need to be made to the compose file for my environment, all of which were mentioned in their instructions. [Here's my compose file](https://markw.wtf/assets/misc/2025-11-20-nextcloud-npm(docker-compose).yml) I ended up with after modifying it to suit my environment. Some of the changes were needed because of recent Nextcloud and/or Docker updates.
 
-Now, to create the Docker containers via the Docker compose file. As previously mentioned, I'm running Debian on my home server. I'm the only one in there managing it, so I like to use my home folder for just about everything because I'm lazy. I ran into some issues installing Docker via aptitude, so I suggest following their official documentation depending on your distro: [Docker install — supported platforms](https://docs.docker.com/engine/install/#supported-platforms)
+Now, to create the Docker containers via the Docker compose file. As previously mentioned, I'm running Debian on my home server. I'm the only one in there managing it, so I like to use my home folder for just about everything because I'm lazy. I ran into some issues installing Docker via APT, so I suggest following their official documentation depending on your distro: [Docker install — supported platforms](https://docs.docker.com/engine/install/#supported-platforms)
 
 Next we want to make sure our system is sync'd and up-to-date:
 
-````markdown
+```c
 sudo apt update && sudo apt upgrade -y
-````
+```
+
+Now we can finally get into the meat and potatoes. Create the compose file and copy/paste your modified docker-compose.yml from 4lexRed's guide:
+
+```c
+nano docker-compose.yml
+```
+
+Press ctrl+x, then press "Y" to save the file. Then, we run Docker compose from the same directory as the docker-compose.yml file.
+
+```c
+docker compose up -d
+```
