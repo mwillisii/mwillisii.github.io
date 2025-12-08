@@ -76,13 +76,13 @@ Open NPM at http://your.host.ip.address:81 and set your admin credentials. From 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(03).png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(03).png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(04).png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(04).png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(05).png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(05).png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 
@@ -92,14 +92,45 @@ In NPM, we need to edit the previous Proxy Host entry created for the domain che
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(06).png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(06).png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(07).png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(07).png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
     Edit the previous entry created for nextcloud-aio-domaincheck. You can use either the IP or the hostname for the container, although it's suggested to use the hostname, as the IP can change anytime the containers are rebuilt, which occurs during Nextcloud updates.
 </div>
 
-And... we're just about done! The only thing left to do is to install our certificate. Just how to do this will vary depending on your domain provider. It's also possible to automate this with certbot, although that could be its own separate post. For now, let's install the SSL certificate from our registrar, in my case Porkbun. They provide an SSL bundle with a public key, private key, and intermediate certificate.
+And... we're just about done! The only thing left to do is to install our certificate. Just how to do this will vary depending on your domain registrar. It's also possible to automate this with certbot, although that could be its own separate post. For now, let's install the SSL certificate from our registrar - Porkbun in my case. They provide an SSL bundle with a public key, private key, and intermediate certificate. For our use, we only need the private.key.pem and public.key.pem files.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(08).png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(09).png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+With the certificate uploaded, let's assign it to our Nextcloud proxy entry:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(10).png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(06).png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(11).png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
+Finally, we need to add a few lines of custom Nginx configuration that Nextcloud requires when hosted behind NPM:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(12).png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
