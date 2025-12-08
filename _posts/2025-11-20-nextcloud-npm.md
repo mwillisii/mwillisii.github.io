@@ -129,11 +129,11 @@ With the certificate uploaded, let's assign it to our Nextcloud proxy entry:
 
 Finally, we need to add a few lines of custom Nginx configuration that Nextcloud requires when hosted behind NPM:
 
-```nginx
+{% highlight nginx %}
 client_body_buffer_size 512k;
 proxy_read_timeout 86400s;
 client_max_body_size 0;
-```
+{% endhighlight %}
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
