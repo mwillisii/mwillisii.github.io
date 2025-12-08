@@ -129,8 +129,16 @@ With the certificate uploaded, let's assign it to our Nextcloud proxy entry:
 
 Finally, we need to add a few lines of custom Nginx configuration that Nextcloud requires when hosted behind NPM:
 
+````markdown
+client_body_buffer_size 512k;
+proxy_read_timeout 86400s;
+client_max_body_size 0;
+````
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(12).png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+All done! You can now use NPM to configure any other services you are hosting, and Nextcloud works perfectly. Just remember, if the service is hosted behind Docker, use the Docker hostname in the Nginx entry, as the internal IP addresses can change. Cheers!
