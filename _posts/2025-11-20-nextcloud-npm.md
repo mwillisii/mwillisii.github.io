@@ -42,18 +42,18 @@ Now, to create the Docker containers via the Docker compose file. As previously 
 
 Next we want to make sure our system is sync'd and up-to-date:
 
-```c
+````markdown
 sudo apt update && sudo apt upgrade -y
-```
+````
 
 Now we can finally get into the meat and potatoes. Create the compose file and copy/paste your modified docker-compose.yml from 4lexRed's guide:
 
-```c
+````markdown
 nano docker-compose.yml
-```
+````
 
-Press ctrl+x, then press "Y" to save the file. Then, we run Docker compose from the same directory as the docker-compose.yml file.
+Press ctrl+x, then press "Y" to save the file. Then, we run Docker compose from the same directory as the docker-compose.yml file:
 
-```c
+````markdown
 docker compose up -d
-```
+````
