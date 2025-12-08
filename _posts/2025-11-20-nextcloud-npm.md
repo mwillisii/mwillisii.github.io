@@ -135,12 +135,6 @@ proxy_read_timeout 86400s;
 client_max_body_size 0;
 {% endhighlight %}
 
-```nginx
-    client_body_buffer_size 512k;
-    proxy_read_timeout 86400s;
-    client_max_body_size 0;
-```
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/2025-11-20-nextcloud-npm(12).png" class="img-fluid rounded z-depth-1" %}
